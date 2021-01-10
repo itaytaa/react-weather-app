@@ -1,0 +1,35 @@
+body ,html, #root{
+    height:100%;
+
+}
+
+.single-day{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid gray;
+    margin:10px;
+
+}
+.single-day:hover{
+    background-color: rgb(225, 240, 246);
+}
+.day-name{
+    font-weight: 900;
+    text-align: center;
+
+}
+.temp{
+    display: flex;
+    justify-content:space-around;
+
+}
+.degrees{
+    color: gray;
+    margin-right: 3px;
+}
+.description{
+    font-weight: 600;
+}
