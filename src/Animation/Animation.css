@@ -1,52 +1,28 @@
-.App, #root {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.weather-days {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-}
-
 .cloud-1 {
-    top: 20px;
+    top: 120px;
     left: 0%;
     position: absolute;
-    animation: cloudFloat 50s infinite;
+    animation: cloudFloat 80s infinite;
     animation-timing-function: linear;
 }
 
 .cloud-2 {
     position: absolute;
     left: 0%;
-    top: 150px;
+    top: 250px;
     animation: cloudFloat 30s infinite;
     animation-timing-function: linear;
 }
 
 .cloud-3 {
-    top: 270px;
+    top: 50px;
     left: 0%;
     position: absolute;
-    animation: cloudFloat 85s infinite;
+    animation: cloudFloat 55s infinite;
     animation-timing-function: linear;
 }
 
-/* .cloud-base{
-    position:absolute;
 
-    left:-200px;
-    background: lightgray;
-    width: 230px;
-    height:70px;
-    border-radius:50px;
-  
-    
-  } */
 
 @keyframes cloudFloat {
     from {
@@ -108,8 +84,7 @@
 }
 
 .lower-cloud-3 {
-    position: relative;
-    /* top:25px; */
+    position: absolute;
     left: 115px;
     background: lightgray;
     width: 80px;
