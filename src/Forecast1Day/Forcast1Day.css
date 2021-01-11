@@ -9,7 +9,8 @@ body ,html, #root{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border:1px solid gray;
+    border:0px solid gray;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.47);
     margin:10px;
 
 }
