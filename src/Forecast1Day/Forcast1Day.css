@@ -3,7 +3,7 @@ body ,html, #root{
 
 }
 
-.single-day{
+.day{
    
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@ body ,html, #root{
     margin:10px;
 
 }
-.single-day:hover{
+.day:hover{
     background-color: rgb(225, 240, 246);
 }
 .day-name{

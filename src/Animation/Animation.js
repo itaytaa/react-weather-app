@@ -2,23 +2,8 @@ import React, { Component } from 'react';
 import './Animation.css'
 
 export default class Animation extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            showAnimation: false
-        }
-    }
 
-
-    handleBoxToggle(e) {
-        console.log(e)
-this.setState({showAnimation:!this.state.showAnimation})
-    }
     render() {
-
-
-
-
 
         return (
             <div  className="animation" style={this.props.style}>

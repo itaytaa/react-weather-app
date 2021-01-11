@@ -3,7 +3,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    background-color: rgb(83, 172, 202);
 }
 
 .weather-days {
@@ -12,107 +13,3 @@
     justify-content: center;
 }
 
-.cloud-1 {
-    top: 20px;
-    left: 0%;
-    position: absolute;
-    animation: cloudFloat 50s infinite;
-    animation-timing-function: linear;
-}
-
-.cloud-2 {
-    position: absolute;
-    left: 0%;
-    top: 150px;
-    animation: cloudFloat 30s infinite;
-    animation-timing-function: linear;
-}
-
-.cloud-3 {
-    top: 270px;
-    left: 0%;
-    position: absolute;
-    animation: cloudFloat 85s infinite;
-    animation-timing-function: linear;
-}
-
-/* .cloud-base{
-    position:absolute;
-
-    left:-200px;
-    background: lightgray;
-    width: 230px;
-    height:70px;
-    border-radius:50px;
-  
-    
-  } */
-
-@keyframes cloudFloat {
-    from {
-        left: -30%;
-    }
-    to {
-        left: 100%;
-    }
-}
-
-.cloud-base {
-    position: relative;
-    top: 0px;
-    left: 150px;
-    background: lightgray;
-    width: 230px;
-    height: 70px;
-    border-radius: 50px;
-}
-
-.upper-cloud {
-    position: absolute;
-    top: -6px;
-    left: 130px;
-    background: lightgray;
-    width: 100px;
-    height: 70px;
-    border-radius: 60%;
-}
-
-.upper-cloud-2 {
-    position: absolute;
-    top: -30px;
-    left: 40px;
-    background: lightgray;
-    width: 120px;
-    height: 70px;
-    border-radius: 60%;
-}
-
-.lower-cloud {
-    position: absolute;
-    top: 30px;
-    left: 120px;
-    background: lightgray;
-    width: 80px;
-    height: 70px;
-    border-radius: 60%;
-}
-
-.lower-cloud-2 {
-    position: absolute;
-    top:30px;
-    left: 55px;
-    background: lightgray;
-    width: 80px;
-    height: 70px;
-    border-radius: 60%;
-}
-
-.lower-cloud-3 {
-    position: relative;
-    /* top:25px; */
-    left: 115px;
-    background: lightgray;
-    width: 80px;
-    height: 70px;
-    border-radius: 50%;
-}

@@ -4,10 +4,17 @@ import './Forcast1Day.css';
 export default class Forecast1Day extends Component {
     constructor(props) {
         super(props)
-
+        this.state = {
+            showAnimation: false,
+        }
 
     }
 
+
+    handleBoxToggle(e) {
+        this.props.onAddAnimaion()
+
+    }
 
     changeToDay(num) {
         let day;
@@ -42,7 +49,7 @@ export default class Forecast1Day extends Component {
 
     render() {
         return (
-            <div className="single-day">
+            <div className={this.props.className}>
                 <p className="day-name">{this.changeToDay(this.props.day)}</p>
                 <img src={require('../icons/' + this.props.icon + ".png")} alt="" />
                 <p className="temp"> <span className="degrees" >{this.props.temperature}&#176;</span><span className="description">{this.props.description}</span></p>
