@@ -5,6 +5,7 @@ import Sounds18 from '../Sounds/18.mp3'
 import Sounds14 from '../Sounds/14.mp3'
 import Sounds7 from '../Sounds/7.mp3'
 import './Forcast1Day.css';
+
 export default class Forecast1Day extends Component {
     constructor(props) {
         super(props)
@@ -23,22 +24,13 @@ export default class Forecast1Day extends Component {
         } else {
             this.audio = new Audio(Sounds7)
         }
-        console.log(this.audio)
-
-        // this.audio.addEventListener('ended', () => this.setState({ play: false }));
     }
 
-    // componentWillUnmount() {
-    //    this.setState({ play: false });
-    //    this.audio.pause();
-    // }
 
-    togglePlay(){
-        // console.log(this.props.src)
+    togglePlay() {
         this.setState({ play: !this.state.play })
         this.state.play ? this.audio.play() : this.audio.pause();
-       
-        // this.audio.play() 
+
     }
 
 
@@ -67,7 +59,6 @@ export default class Forecast1Day extends Component {
                 day = "Saturday"
                 break;
             default:
-
         }
         return day
     }
@@ -75,7 +66,6 @@ export default class Forecast1Day extends Component {
 
 
     render() {
-
         return (
             <div className={this.props.className}
                 onMouseLeave={this.togglePlay.bind(this)}
