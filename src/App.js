@@ -8,7 +8,7 @@ class App extends React.Component {
         super(props)
         this.state = {
             forecast: [],
-  
+
         }
     }
 
@@ -25,17 +25,17 @@ class App extends React.Component {
 
         return (
             <div className="App"  >
-                <Animation/>
+                <Animation />
                 <div className="weather-days" style={{ background: "lightblue" }} >
                     {this.state.forecast.map((day, index) => {
-                        return <Forecast1Day key={index} 
-                        day={day.day} 
-                        temperature={day.temperature} 
-                        description={day.description} 
-                        icon={day.icon} 
-                        className={`day ${index}`
-                    
-                    }/>
+                        return <Forecast1Day key={index}
+                            day={day.day}
+                            temperature={day.temperature}
+                            description={day.description}
+                            icon={day.icon}
+                            className={`day ${index}`
+
+                            } />
                     })}
                 </div>
 
